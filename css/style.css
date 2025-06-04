@@ -1,0 +1,249 @@
+/*Depois faço as variaveis*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f8fa;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 310px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-right: 1px solid #e6ecf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.sidebar-direita{
+    height: 1000vh;
+    width: 500px;
+    top: 0;
+    margin-left:68.56%;
+    background-color: #ffffff;
+    border-right: 1px solid #e6ecf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    padding-left: 120px; 
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.nav-links li {
+    width: 100%;
+    
+}
+.nav-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 13px;
+    margin-left: 45px; 
+    width: calc(80% - 20px); 
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+    text-decoration: double;
+}
+.nav-links i {
+    margin-right: 30px; 
+    font-size: 25px;
+}
+
+.nav-links a:hover {
+    background-color: #64646450;
+}
+
+.icon-home, .icon-search, .icon-notifications, .icon-messages, .icon-bookmarks, .icon-lists, .icon-profile, .icon-more {
+    margin-right: 20px;
+}
+
+.postar {
+    width: 210px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 200px;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.postar:hover {
+    background-color: #1879b6;
+}
+
+.secao-usuario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 120px;
+    position: relative; 
+    margin-top: 40px; 
+}
+.secao-usuario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%; /* Largura da linha */
+    border-top: 1px solid #e6ecf0;
+}
+.secao-usuario:hover {
+    background-color: #7575757a; 
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-usuario {
+    font-weight: bold;
+}
+
+.user{
+    color: #657786;
+}
+
+.icone-usuario {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.icone-usuario i {
+    margin-right: 10px;
+    font-size: 18px; 
+    color: #000000; 
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.icone-usuario i:hover {
+    color: #000000; 
+}
+.conteudo {
+    margin-left: 310px;
+    padding: 0px; 
+    height: 1000px;
+}
+
+.topo-menu {
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    border-bottom: 1px solid #8a8a8abd;
+    margin-bottom: 20px;
+    width: 1094px; 
+    top: 0;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6ecf0;
+    z-index: 1000;
+
+}
+
+
+.tab-conteudo {
+    align-items: center;
+    width: 100%;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    background-color: transparent;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #747575;
+    transition: color 0.2s;
+}
+
+.tab-conteudo.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.tab-conteudo:hover {
+    background-color: #8a8a8abd;
+    color: #000000;
+}
+.fa-cog {
+    height: 50px; /* Altura */
+    width: 50px; /* Largura */
+    font-size: 16px; 
+    color: #000000bd;
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 100%;
+}
+.fa-cog::before{
+    height: 50px; 
+    width: 50px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.2s; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.fa-cog:hover {
+    background-color: #7575757a; 
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
